@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_width="fill_parent"
+    android:background="@drawable/card_border"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblSeatNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:maxLength="16"
+                android:text="Seat No:"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtSeatN0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:maxLength="16"
+                android:textColor="@android:color/black"
+                android:text="1 A"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lblSeatCat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:text="Seat Category:"
+                android:maxLength="16"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/txtSeatCat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:text="Normal"
+                android:textColor="@android:color/black"
+                android:maxLength="16"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#000"
+                android:layout_marginTop="2dp"
+                android:gravity="left">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Name"
+                    android:textColor="#000"
+                    android:imeOptions="actionNext"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:textColor="#000">
+
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Age"
+                    android:inputType="phone"
+                    android:imeOptions="actionNext"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@android:color/black"
+                android:entries="@array/gender"
+                android:prompt="@string/selectDrop" />
+
+           <!-- <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#009688"
+                android:gravity="center"
+                android:text="Upload"
+                android:layout_weight="0.2"
+                android:textColor="@android:color/white" />-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

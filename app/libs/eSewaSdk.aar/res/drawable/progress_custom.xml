@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 CashOnAd Pvt. Ltd.
+  ~
+  ~ The source code solely belongs to CashOnAd Pvt. Ltd. It may not be used
+  ~ or distributed for purposes other than the projects involved in this organization.
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited.
+  -->
+
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="1440" >
+
+    <shape
+        android:innerRadiusRatio="3"
+        android:shape="ring"
+        android:thicknessRatio="20"
+        android:useLevel="false" >
+        <size
+            android:height="@dimen/sdk_esewa_progress_height"
+            android:width="@dimen/sdk_esewa_progress_width" />
+
+
+        <stroke android:width="10dp"/>
+
+        <gradient
+            android:centerColor="@color/eSewa"
+            android:centerY="0.50"
+            android:endColor="@color/white1"
+            android:startColor="@color/green1"
+            android:type="sweep"
+            android:useLevel="false" />
+    </shape>
+
+</rotate>
+<!-- From: file:/E:/AndroidStudioProjects/eSewaSdk/app/src/main/res/drawable/progress_custom.xml -->

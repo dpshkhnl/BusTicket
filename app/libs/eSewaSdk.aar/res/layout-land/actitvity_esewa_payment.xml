@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:esewaandrodisdk="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="@dimen/sdk_esewa_payment_activity_logo_width"
+        android:layout_height="@dimen/sdk_esewa_payment_activity_logo_height"
+        android:layout_margin="@dimen/sdk_esewa_payment_activity_logo_margin"
+        android:src="@drawable/esewa_icon_set" />
+
+    <com.esewa.android.sdk.payments.ProgressWheel
+        android:id="@+id/progress_bar_checking_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sdk_esewa_payment_activity_logo_margin"
+        esewaandrodisdk:barColor="@color/green1"
+        esewaandrodisdk:progressIndeterminate="true" />
+
+    <com.esewa.android.sdk.payments.CustomFontTextView
+        android:id="@+id/text_view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/sdk_esewa_checking_credential_text_size"
+        android:text="@string/checking_credentials"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/sdk_esewa_payment_activity_logo_margin"/>
+
+
+</LinearLayout><!-- From: file:/E:/AndroidStudioProjects/eSewaSdk/app/src/main/res/layout-land/actitvity_esewa_payment.xml -->

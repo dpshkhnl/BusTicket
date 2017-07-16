@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchBusActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/actionbar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:title="Boarding Point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary" />
+</android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/actionbar"
+        android:orientation="vertical">
+
+
+
+        <ListView
+            android:id="@+id/lstBoarding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/txtAvailableBus"
+            android:divider="@null"
+            android:dividerHeight="1dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

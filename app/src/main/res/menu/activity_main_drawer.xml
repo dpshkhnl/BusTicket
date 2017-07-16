@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/dashboard"
+                    android:icon="@drawable/ic_dashboard"
+                    android:title="Dashboard" />
+                <item
+                    android:id="@+id/travelHistory"
+                    android:icon="@drawable/ic_travel"
+                    android:title="Travel History" />
+                <item
+                    android:id="@+id/profileupd"
+                    android:icon="@drawable/ic_update"
+                    android:title="Update Profile" />
+                <item
+                    android:id="@+id/nav_change_pwd"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Change Password" />
+                <item
+                    android:id="@+id/nav_complain"
+                    android:icon="@drawable/ic_report"
+                    android:title="Complain" />
+
+            <item
+                android:id="@+id/login"
+                android:icon="@drawable/ic_people"
+                android:title="Login"
+                android:visible="true" />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_people"
+                android:title="Log Out"
+                android:visible="false" />
+
+        </group>
+
+
+            <item android:title="Databankbooking">
+                <menu>
+                    <item
+                        android:id="@+id/nav_event"
+                        android:icon="@drawable/ic_event"
+                        android:title="News And Events" />
+                    <item
+                        android:id="@+id/nav_about"
+                        android:icon="@drawable/ic_info"
+                        android:title="About Us" />
+                    <item
+                        android:id="@+id/nav_hook"
+                        android:icon="@drawable/ic_updown"
+                        android:title="How To Book" />
+
+                    <item
+                        android:id="@+id/nav_process"
+                        android:icon="@drawable/ic_question_mark"
+                        android:title="Our Process" />
+                    <item
+                        android:id="@+id/contactus"
+                        android:icon="@drawable/ic_contact"
+                        android:title="Contact Us" />
+
+                </menu>
+            </item>
+
+
+</menu>

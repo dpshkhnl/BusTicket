@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/image_view_esewa_logo"
+                    android:layout_width="@dimen/sdk_esewa_payment_activity_logo_width"
+                    android:layout_height="@dimen/sdk_esewa_payment_activity_logo_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/esewa_icon_set" />
+
+            </LinearLayout>
+
+            <com.esewa.android.sdk.payments.CustomFontTextView
+                android:id="@+id/text_view_message_invalid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:text="Invalid Username or password."
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <EditText
+                    android:id="@+id/sdk_edit_text_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sdk_esewa_edit_text_height"
+                    android:textSize="@dimen/sdk_esewa_edit_text_text_size"
+                    android:background="@drawable/card_background"
+                    android:paddingLeft="12dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/black"
+                    android:hint="USERNAME"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/gray_10" />
+
+
+                <EditText
+                    android:id="@+id/sdk_edit_text_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sdk_esewa_edit_text_height"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="@dimen/sdk_esewa_edit_text_text_size"
+                    android:background="@drawable/card_background"
+                    android:paddingLeft="12dp"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:hint="PASSWORD"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/gray_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/sdk_button_sign_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/shadw_button"
+                        android:textColor="@color/white"
+                        android:text="@string/login"
+                        android:textSize="@dimen/sdk_esewa_edit_text_text_size"
+                        android:layout_weight="0.5"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/sdk_button_login_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/shadw_button"
+                        android:textColor="@color/white"
+                        android:text="CANCEL"
+                        android:textSize="@dimen/sdk_esewa_edit_text_text_size"
+                        android:layout_weight="0.5"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/E:/AndroidStudioProjects/eSewaSdk/app/src/main/res/layout-land/layout_log_in.xml -->

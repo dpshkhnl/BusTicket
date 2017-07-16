@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:typeface="sans" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Services"
+
+            />
+        <Spinner
+            android:id="@+id/txtService"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:entries="@array/brew_array"
+            android:prompt="@string/selectDrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:text="Message"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtMessage"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:scrollbars="vertical" />
+        </android.support.design.widget.TextInputLayout>
+
+
+       <!-- <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="20dp"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#5bc0de"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />-->
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "287488308590",
+    "firebase_url": "https://fir-databankbooking.firebaseio.com",
+    "project_id": "firebase-databankbooking",
+    "storage_bucket": "firebase-databankbooking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287488308590:android:2b84f092ed297765",
+        "android_client_info": {
+          "package_name": "webbank.com.busticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287488308590-9o10ni8m1qi77vg91b22fesq2vc94tv7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "287488308590-eue7957vf2348kvm59ue4tcnbg4gn5vp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "webbank.com.busticket",
+            "certificate_hash": "fe94c2b5d23de8fa2c8c53c3b496004f6b55627e"
+          }
+        },
+        {
+          "client_id": "287488308590-jpma508o2r8le35eahd1kaim0m2jtifb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi-AGX812zDaB_DSlMeGln4E-3KhCyry8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287488308590-9o10ni8m1qi77vg91b22fesq2vc94tv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

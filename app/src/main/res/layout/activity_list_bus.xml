@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchBusActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="2.03"
+                    android:gravity="center_horizontal"
+                    android:text="The Buses  available for"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kathmandu"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="to"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Birtamode"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="on"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/comments" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="Wednesday 4th June 2017"
+                    android:textColor="#fff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!--     <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="5dp"
+                     android:background="@drawable/roun_rect_gray"
+                     android:textColor="@color/colorBackroundWhite"
+                     android:text="Sort By:"
+                     android:textSize="14dp"
+                     android:textStyle="bold" />
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="8dp"
+                     android:background="@drawable/roun_rect_white"
+                     android:text="Fare"
+
+                     android:textSize="14dp"
+                     android:textStyle="bold" />
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginLeft="8dp"
+                     android:background="@drawable/roun_rect_white"
+                     android:text="Time"
+                     android:textSize="14dp"
+                     android:textStyle="bold" />-->
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frameLayout"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAvailableBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Available Buses"
+                android:textColor="@color/colorGray"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <ListView
+                android:id="@+id/bus_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+
+                android:layout_below="@+id/txtAvailableBus"
+                android:dividerHeight="3dp" />
+
+            <ImageView
+                android:id="@+id/imgTripNF"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/tripnotfound" />
+
+            <TextView
+                android:id="@+id/notFound"
+                android:layout_below="@+id/imgTripNF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:visibility="gone"
+                android:text="Trip Not Found"
+                android:textColor="@color/colorGray"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

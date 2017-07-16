@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#7000"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    >
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_three"
+       />
+
+
+
+
+
+
+
+
+
+
+
+</android.support.v7.widget.Toolbar>

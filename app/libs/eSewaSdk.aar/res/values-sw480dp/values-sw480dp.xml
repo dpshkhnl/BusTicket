@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/AndroidStudioProjects/eSewaSdk/app/src/main/res/values-sw480dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="sdk_esewa_button_text_size">40sp</dimen>
+    <dimen name="sdk_esewa_checking_credential_text_size">40dp</dimen>
+    <dimen name="sdk_esewa_edit_text_height">72dp</dimen>
+    <dimen name="sdk_esewa_edit_text_text_size">40sp</dimen>
+    <dimen name="sdk_esewa_payment_activity_logo_height">150dp</dimen>
+    <dimen name="sdk_esewa_payment_activity_logo_margin">20dp</dimen>
+    <dimen name="sdk_esewa_payment_activity_logo_width">500dp</dimen>
+    <dimen name="sdk_esewa_progress_height">10dp</dimen>
+    <dimen name="sdk_esewa_progress_width">10dp</dimen>
+    <dimen name="sdk_esewa_username_text_size">28dp</dimen>
+</resources>

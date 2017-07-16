@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:background="@color/white">
+
+</View><!-- From: file:/E:/AndroidStudioProjects/eSewaSdk/app/src/main/res/layout/vertical_separater.xml -->

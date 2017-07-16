@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/action_bar_color"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:src="@drawable/esewa_logo_set"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/esewa_color"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:gravity="center_vertical">
+
+            <com.esewa.fonepay.esewapaymentsdk.CustomFontTextView
+                android:id="@+id/sdk_text_view_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="2"
+                android:text="Welcome \n12345678910111213141sasada516"
+                android:drawableLeft="@drawable/ic_user_icon"
+                android:textColor="@color/white"
+                android:layout_marginLeft="4dp"
+                android:textSize="@dimen/sdk_esewa_username_text_size"
+                android:gravity="left|center_vertical"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/esewa_color"
+            android:layout_weight="1">
+            <com.esewa.fonepay.esewapaymentsdk.CustomFontTextView
+                android:id="@+id/sdk_text_view_balance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="2"
+                android:text="Current Balance\nNPR. 1000000000000"
+                android:drawableRight="@drawable/ic_balance_icon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sdk_esewa_username_text_size"
+                android:gravity="right|center_vertical"
+                android:ellipsize="end" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view_payment_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_payment_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sdk_text_view_message_less_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:text="Your Balance is less than required total amount."
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp">
+
+                <com.esewa.fonepay.esewapaymentsdk.CustomFontTextView
+                    android:id="@+id/sdk_text_view_merchant_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_background_green"
+                    android:textColor="@color/white1"
+                    android:textSize="@dimen/sdk_esewa_username_text_size"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="QFX Cinemas"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+                <com.esewa.fonepay.esewapaymentsdk.CustomFontTextView
+                    android:id="@+id/sdk_text_view_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="Movie Ticket"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sdk_esewa_username_text_size"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+                <include layout="@layout/horizontal_seperator_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_total_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical">
+                    <com.esewa.fonepay.esewapaymentsdk.CustomFontTextView
+                        android:id="@+id/text_view_total_charge_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="Total Amount"
+                        android:textSize="@dimen/sdk_esewa_username_text_size"
+                        android:textColor="@color/black" />
+
+                    <com.esewa.fonepay.esewapaymentsdk.CustomFontTextView
+                        android:id="@+id/sdk_text_view_total_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_alignParentRight="true"
+                        android:text="360.0000"
+                        android:textSize="@dimen/sdk_esewa_username_text_size"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:layout_marginTop="12dp"
+                android:visibility="gone">
+
+                <com.esewa.fonepay.esewapaymentsdk.CustomFontTextView
+                    android:id="@+id/text_view_additional_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green1"
+                    android:textColor="@color/white1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:text="Additional Information" />
+
+                <com.esewa.fonepay.esewapaymentsdk.CustomSpinner
+                    android:id="@+id/spinner_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <EditText
+                    android:id="@+id/edit_text_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="REMARKS"
+                    android:textColorHint="@color/gray_10"
+                    android:padding="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/sdk_button_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/shadw_button"
+                    android:textColor="@color/white"
+                    android:text="@string/pay"
+                    android:textSize="@dimen/sdk_esewa_button_text_size_confirmation"
+                    android:layout_weight="0.5"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/sdk_button_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/shadw_button"
+                    android:textColor="@color/white"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/sdk_esewa_button_text_size_confirmation"
+                    android:layout_weight="0.5"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout><!-- From: file:/E:/AndroidStudioProjects/eSewaSdk/app/src/main/res/layout/layout_payment_confirmation.xml -->

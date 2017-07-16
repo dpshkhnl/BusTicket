@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblSeatNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:gravity="left"
+            android:maxLength="16"
+            android:text="Seat No:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtSeatN0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:gravity="left"
+            android:maxLength="16"
+            android:textColor="@android:color/black"
+            android:text="1 A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lblSeatCat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:gravity="left"
+            android:textColor="@android:color/black"
+            android:text="Seat Category:"
+            android:maxLength="16"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtSeatCat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:gravity="left"
+            android:text="Normal"
+            android:textColor="@android:color/black"
+            android:maxLength="16"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:gravity="left"
+            android:hint="Name"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="16"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:hint="Age"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:textColor="@android:color/black"
+            android:entries="@array/gender"
+            android:prompt="@string/selectDrop" />
+
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DCDCDC</color>
+    <color name="colorPrimaryDark">#FFF</color>
+    <color name="colorAccent">#337ab7</color>
+    <color name="cityname">#5A5A5A</color>
+    <color name="date">#5A5A5A</color>
+    <color name="categary">#5A5A5A</color>
+    <color name="state">#A0A0A0</color>
+    <color name="week">#A0A0A0</color>
+    <color name="view">#e3e3e3</color>
+    <color name="colorGray">#495C67</color>
+    <color name="colorOrange">#F68159</color>
+    <color name="colorLightGray">#a6abae</color>
+    <color name="colorBackroundWhite">#f0f2ea</color>
+    <color name="white">#ffffff</color>
+    <color name="btnColor">#337ab7</color>
+
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="webbank.com.busticket">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".VerifyRegister"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".SearchBusActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        </activity>
+
+
+        <activity
+            android:name=".BoardingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".TravellerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".TicketConfirmActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+
+
+
+        </activity>
+        <activity
+            android:name=".DeportingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity
+            android:name=".SeatActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name=".UpdateActivity"
+            android:noHistory="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".TravelHistoryActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ComplainActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".NewsAndEvent"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".BookProcess"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".OurProcess"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+
+    </application>
+
+
+</manifest>

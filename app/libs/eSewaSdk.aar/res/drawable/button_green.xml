@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:startColor="@color/green1" android:angle="90" android:endColor="@color/green2" />
+            <corners android:radius="5dp" />
+            <padding android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp"/>
+
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/green1" android:angle="90" android:endColor="@color/green2" />
+            <corners android:radius="5dp" />
+            <padding android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp"/>
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient android:endColor="@color/green1" android:centerColor="@color/green1" android:angle="90" android:startColor="@color/green2" />
+            <corners android:radius="5dp"/>
+            <padding android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp"/>
+        </shape>
+    </item>
+</selector><!-- From: file:/E:/AndroidStudioProjects/eSewaSdk/app/src/main/res/drawable/button_green.xml -->
